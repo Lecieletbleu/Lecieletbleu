@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Are you a human?</title>
+  <style>
+    h2 {
+      text-align: center;
+      font-size: 2em;
+    }
+    button {
+      background-color: blue;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.5em;
+      cursor: pointer;
+      position: relative;
+    }
+    button:hover {
+      background-color: #000;
+    }
+    .non {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .non:hover {
+      left: 0;
+      transform: translateX(0);
+    }
+    .non-random {
+      left: calc(random(100%) * 100px);
+      top: calc(random(100%) * 100px);
+    }
+  </style>
+</head>
+<body>
+  <h2>Are you a human?</h2>
+  <div class="buttons">
+    <button class="oui">Oui</button>
+    <button class="non non-random">Non</button>
+  </div>
+</body>
+</html>
